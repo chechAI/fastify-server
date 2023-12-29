@@ -1,0 +1,27 @@
+{
+  "name": "fastify-server",
+  "version": "1.0.0",
+  "description": "\"\"",
+  "main": "index.js",
+  "repository": "git@github.com:jermainedafoe/fastify-server.git",
+  "author": "Jermaine Dafoe <etesfaye@hotmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "start:dev": "node -r dotenv/config src/index.js",
+    "format": "prettier **/*.js --write"
+  },
+  "dependencies": {
+    "@fastify/cors": "^8.5.0",
+    "@fastify/formbody": "^7.4.0",
+    "@fastify/swagger": "^8.13.0",
+    "@fastify/websocket": "^8.3.1",
+    "fastify": "^4.25.2",
+    "fastify-mongoose-api": "^1.2.22"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1",
+    "nodemon": "^3.0.2"
+  }
+}
