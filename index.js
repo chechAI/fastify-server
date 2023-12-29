@@ -14,7 +14,7 @@ async function bootstrap() {
 
         await fastify.ready();
         const PORT = process.env.PORT || 4000;
-        const address = await fastify.listen(PORT, '0.0.0.0');
+        const address = await fastify.listen({port: PORT, host: '0.0.0.0'});
         console.log(`Server listening on address: ${address}`);
     } catch (err) {
         console.error(`Can't start server: ${err.message}`);
